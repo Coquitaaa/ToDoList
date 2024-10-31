@@ -1,0 +1,121 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* 
+PALETA DE COLORES 
+AMARILLO: #f8fcc9 
+GRIS: #6f6c6d
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #fdf0c7;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 10rem;
+    align-items: center;
+    font-weight: 900;
+    color: #000000;
+}
+
+h1 span{
+    font-size: large;
+    font-weight: 700;
+}
+
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    margin: auto;
+    gap: 2rem;
+}
+
+#newTaskContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: rgba(2, 2, 2, 0);
+    padding-left: 4.5rem;
+}
+
+#taskInput{
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+}
+
+#addBtn{
+    display: flex;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0);
+    border: 0;
+    transition: all .1s;
+}
+#addBtn:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+button img{
+    height: 2rem;
+    width: auto;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    background-color: #fdf0c7;
+    padding: 0% 1rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+.task p{
+    text-align: center;
+    align-self: center;
+    color: black;
+    font-weight: 700;
+}
+
+.deleteBtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ff4848de;
+    border: 0;
+    padding: .5rem .25rem;
+}
+
+.deleteBtn:hover{
+    cursor: pointer;
+}
