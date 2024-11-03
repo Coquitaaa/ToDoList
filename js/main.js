@@ -2,6 +2,10 @@ let task_list = [];
 
 let addBtn = document.getElementById("addBtn");
 
+let taskCounter = document.getElementById("taskCounter");
+
+let taskCounterContainer = document.getElementById("taskCounterContainer")
+
 addBtn.addEventListener("click",()=>{
     let taskInput = document.getElementById("taskInput");
     let taskTitle = taskInput.value;
@@ -14,6 +18,9 @@ addBtn.addEventListener("click",()=>{
 
         taskInput.value = "";
 
+        getTaskCounter();
+        
+
     }else{
         alert("Debes ingresar un titulo para agregar una tarea");
     }
@@ -21,7 +28,7 @@ addBtn.addEventListener("click",()=>{
 
 
 function getTaskList(){
-    let taskList = document.getElementById("taskList")
+    let taskList = document.getElementById("taskList");
     taskList.innerHTML = "";
 
     task_list.forEach((taskTitle, nroTask) => {
@@ -53,7 +60,16 @@ function deleteTask(nroTask) {
 
     getTaskList();
     
+    getTaskCounter();
 }
+
+taskCounterContainer = document.getElementById("taskCounterContainer");
+
+function getTaskCounter() {
+    taskCounter.textContent = `Tareas pendientes: ${task_list.length}`;
+    taskCounterContainer.appendChild(taskCounter);
+}
+
 
 
 
