@@ -29,15 +29,79 @@ body{
     background-color: #fdf0c7;
 }
 
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    height: 2rem;
+}
+
+.mainHeader p {
+    font-weight: 600;
+}
+
+.mainHeader div ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 2rem;
+    align-items: center;
+}
+
+.mainHeader div ul li {
+    height: fit-content;
+    list-style: none;
+    font-weight: 600;
+    transition: all 100ms;
+    text-align: center;
+    margin: 0;
+}
+
+nav li:hover {
+    transform: scale(1.05);
+}
+
+.perfilIconContainer {
+    transition: all 100ms;
+}
+
+.perfilIcon {
+    height: 35px;
+    padding-top: 0.2rem;
+    width: auto;
+}
+
+.perfilIcon:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
 h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 15rem;
     height: 10rem;
     align-items: center;
     font-weight: 900;
     color: #000000;
+    padding-left: .25rem;
+    border: solid black 2px;
+    box-shadow: black -25px 25px 0;
+}
+
+.h1Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
 }
 
 h1 span{
@@ -69,6 +133,10 @@ h1 span{
     text-align: center;
 }
 
+#addBtn img {
+    height: 2.5rem;
+}
+
 #addBtn{
     display: flex;
     align-items: center;
@@ -76,9 +144,19 @@ h1 span{
     border: 0;
     transition: all .1s;
 }
+
 #addBtn:hover{
     cursor: pointer;
-    transform: scale(1.15);
+    padding-left: .25rem;
+    border: solid black 2px;
+    box-shadow: black -10px 10px 0;
+}
+
+.btn-animation:hover {
+    cursor: pointer;
+    padding: 0 .25rem;
+    border: solid black 2px;
+    box-shadow: black -10px 10px 0;
 }
 
 button img{
@@ -98,6 +176,13 @@ li {
     padding: 0% 1rem;
     padding-bottom: 2px;
     border-bottom: 2px solid black;
+    transition: all 100ms;
+}
+
+.task:hover {
+    cursor: pointer;
+    background-color: #fff8e1;
+    box-shadow: 0px 0px 30px #fff8e1 ;
 }
 
 .task p{
@@ -113,9 +198,39 @@ li {
     justify-content: center;
     background-color: #ff4848de;
     border: 0;
-    padding: .5rem .25rem;
+    padding: .25rem .25rem;
+    transition: all 100ms;
 }
 
 .deleteBtn:hover{
+    background-color: #ff7474de;
     cursor: pointer;
+    border: solid black 2px;
+    box-shadow: black -5px 3px 0;
+}
+
+.taskHistorySection {
+    height: auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.taskHistoryArticle {
+    border-bottom: solid 2px black;
+    padding-bottom: 2rem;
+    
+}
+
+.taskHistoryTitle {
+    color: rgb(80, 80, 80);
+    font-size: larger;
+    font-weight: 500;
+}
+
+.taskHistoryCounterContainer {
+    margin-top: 2rem;
+}
+
+.taskHistoryCounterContainer p {
+    padding-top: 1rem;
 }

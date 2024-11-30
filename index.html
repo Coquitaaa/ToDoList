@@ -10,15 +10,30 @@
     </style>
 </head>
 <body>
-    <h1 class="mainTitle">To-Do List<br><span class="byBressan">by Bressan</span>
-    </h1>
+
+    <header class="mainHeader">
+        <a href="index.html"><p>Live List</p></a>
+        <div>
+            <nav>
+                <ul>
+                    <li class="btn-animation"><a href="#">Tareas</a></li>
+                    <li class="btn-animation"><a href="pages/historial.html">Historial</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="./pages/perfil.html" class="btn-animation perfilIconContainer"><img src="assets/svg/perfilIcon.svg" alt="perfilIcon" class="perfilIcon"></a>
+    </header>
+
+    <div class="h1Container">
+    <h1 class="mainTitle">Live List<br><span class="byBressan">by Bressan</span></h1>
+    </div>
 
     <section class="appContainer">
         <div id="newTaskContainer">
 
             <input type="text" placeholder="Añade una nueva tarea" id="taskInput">
 
-            <button id="addBtn"><img src="assets/svg/sendIcon.svg" alt="addIcon"></button>
+            <button id="addBtn" class="btn-animation"><img src="assets/svg/sendIcon.svg" alt="addIcon"></button>
 
         </div>
 
@@ -31,7 +46,6 @@
             <p id="taskCounter">Tareas pendientes: 0</p>
         </div>
 
-        <script src="js/clases/task.js"></script>
         <script src="js/main.js"></script>
     </section>
 </body>

@@ -6,6 +6,13 @@ let taskCounter = document.getElementById("taskCounter");
 
 let taskCounterContainer = document.getElementById("taskCounterContainer")
 
+class task{
+
+    constructor(title){
+        this.title = title;
+    }
+
+}
 
 
 function addTask() {

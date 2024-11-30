@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <header class="mainHeader">
+        <a href="../index.html"><p>Live List</p></a>
+        <div>
+            <nav>
+                <ul>
+                    <li class="btn-animation"><a href="../index.html">Tareas</a></li>
+                    <li class="btn-animation"><a href="../pages/historial.html">Historial</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="../pages/perfil.html" class="btn-animation perfilIconContainer"><img src="../assets/svg/perfilIcon.svg" alt="perfilIcon" class="perfilIcon"></a>
+    </header>
+
+    <section class="taskHistorySection">
+
+        <h2 class="taskHistoryTitle">Historial de tareas</h2>
+
+        <article class="taskHistoryArticle">
+            <ul class="taskHistory">
+
+            </ul>
+        </article>
+
+
+        <div class="taskHistoryCounterContainer">
+            <p class="taskHistoryCounter">Todas las tareas: 0</p>
+            <p class="finishedTaskHistoryCounter">Todas las tareas termiadas: 0</p>
+            <p class="UnfinishedTaskHistoryCounter">Tareas sin terminar: 0</p>
+        </div>
+
+    </section>
+
+
+
+    <script src="../js/main.js"></script>
+</body>
