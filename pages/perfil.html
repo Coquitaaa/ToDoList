@@ -8,23 +8,38 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+    <div class="mainHeaderDiv">
+        <header class="mainHeader">
+            <a href="../index.html"><p>Live List</p></a>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="btn-animation"><a href="../index.html">Tareas</a></li>
+                        <li class="btn-animation"><a href="../pages/historial.html">Historial</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="../pages/perfil.html" class="btn-animation perfilIconContainer"><img src="../assets/svg/perfilIcon.svg" alt="perfilIcon" class="perfilIcon"></a>
+        </header>
+    </div>
 
-    <header class="mainHeader">
-        <a href="../index.html"><p>Live List</p></a>
-        <div>
-            <nav>
-                <ul>
-                    <li class="btn-animation"><a href="../index.html">Tareas</a></li>
-                    <li class="btn-animation"><a href="../pages/historial.html">Historial</a></li>
-                </ul>
-            </nav>
+    <section class="profileSection">
+
+        <div class="profileTitleContainer">
+
+            <h2 class="profileTitle">Tu Perfil</h2>
+
         </div>
-        <a href="../pages/perfil.html" class="btn-animation perfilIconContainer"><img src="../assets/svg/perfilIcon.svg" alt="perfilIcon" class="perfilIcon"></a>
-    </header>
 
-
+        <article class="comingSoonContainer">
+            <h3 class="comingSoon">
+                Coming soon...
+            </h3>
+        </article>
+    </section>
 
     <script src="../js/main.js"></script>
 </body>

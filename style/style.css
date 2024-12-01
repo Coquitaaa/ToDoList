@@ -29,6 +29,12 @@ body{
     background-color: #fdf0c7;
 }
 
+.mainHeaderDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .mainHeader {
     display: flex;
     flex-direction: row;
@@ -36,10 +42,12 @@ body{
     align-items: center;
     padding: 1.5rem;
     height: 2rem;
+    width: 1000px;
 }
 
-.mainHeader p {
-    font-weight: 600;
+.mainHeader a p {
+    font-weight: 800;
+    word-spacing: -3px;
 }
 
 .mainHeader div ul{
@@ -91,6 +99,7 @@ h1{
     height: 10rem;
     align-items: center;
     font-weight: 900;
+    word-spacing: -3px;
     color: #000000;
     padding-left: .25rem;
     border: solid black 2px;
@@ -107,6 +116,7 @@ h1{
 h1 span{
     font-size: large;
     font-weight: 700;
+    word-spacing: 2px;
 }
 
 .appContainer{
@@ -210,21 +220,36 @@ li {
 }
 
 .taskHistorySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: auto;
     padding: 2rem;
     gap: 1rem;
 }
 
 .taskHistoryArticle {
-    border-bottom: solid 2px black;
     padding-bottom: 2rem;
     
 }
 
+.taskHistoryTitleContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+
+}  
+
 .taskHistoryTitle {
-    color: rgb(80, 80, 80);
+    width: fit-content;
+    color: rgb(0, 0, 0);
     font-size: larger;
-    font-weight: 500;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    border: solid black 2px;
+    box-shadow: black -10px 10px 0;
 }
 
 .taskHistoryCounterContainer {
@@ -233,4 +258,73 @@ li {
 
 .taskHistoryCounterContainer p {
     padding-top: 1rem;
+}
+
+/* Pagina del perfil */
+
+
+.profileTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.profileTitle {
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    border: solid black 2px;
+    box-shadow: black -10px 10px 0;
+}
+
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.historyFunctions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.historyFunctions p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.historyFunctions button{
+    padding: 0 .25rem;
+    border: 0;
+    background-color: #ff4848de;
+    color: #fdf0c7;
+    transition: all 100ms;
+
+}
+
+.historyFunctions button:hover{
+    background-color: #ff7474de;
+    cursor: pointer;
+    border: solid black 2px;
+    box-shadow: black -5px 5px 0;
+
+}
+
+
+.comingSoonContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 0;
 }
