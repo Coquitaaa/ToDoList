@@ -38,6 +38,7 @@ function addTask() {
         taskInput.value = "";
 
         getTaskCounter();
+
         
 
     }else{
@@ -105,6 +106,21 @@ function deleteTask(nroTask) {
     getTaskList();
     
     getTaskCounter();
+
+    Toastify({
+
+        text: "Tarea Completada!!",
+        duration: 1800,
+        gravity: "bottom",
+        close: true,
+        stopOnFocus:true,
+
+        style: {
+            background: "linear-gradient(to right, #6cac41, #6cac41)"
+        },
+        
+        }).showToast();
+    
 }
 
 function saveCompletedTasks() {
